@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>index</title>
+	<script>
+		function showPopup() {
+		    document.getElementById("popup").style.display = "block";
+		  }
+		
+		  function closePopup() {
+		    document.getElementById("popup").style.display = "none";
+		  }
+		
+	
+	  </script>
+    <style>
+        html{
+            height: 100%;
+            box-sizing: border-box;
+            min-width: 640px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            background-color: #333;
+        }
+        body {
+            box-sizing: border-box;
+            width: 640px;
+            height: 1030px;
+            margin: 0 auto;
+            padding: 0;
+            background-image:url("https://www.freeimg.cn/i/2023/11/07/654a4de96073c.jpg");
+            background-repeat:no-repeat; 
+            background-size:cover;
+            display: flex;
+        }
+		.popup {
+		            display: none;
+		            position: fixed;
+		            top: 50%; /* 距离顶部50% */
+		            left: 50%;
+		            transform: translate(-50%, -50%);
+		            background-color: white;
+		            padding: 40px;
+		            border: 1px solid black;
+		            z-index: 9999;
+		    }
+			/* 将按钮扩大到整个屏幕 */
+			    #showPopupButton {
+			      position: fixed;
+			      top: 0;
+			      left: 0;
+			      width: 100%;
+			      height: 100%;
+			      background-color: transparent; /* 设置按钮背景为透明 */
+			      border: none; /* 去掉按钮边框 */
+			      cursor: pointer; /* 鼠标悬停时显示指针 */
+    </style>
+</head>
+<body>
+		<button id="showPopupButton" onclick="showPopup()"></button>
+		
+		<div id="popup" class="popup">
+		  <p>点击运动</p>
+		  <p>可以了解它们的信息</p>
+		  <p>还可以参与小游戏哦</p>
+		  <button onclick="closeToPage()">知道了</button>
+
+</body>
+</html>

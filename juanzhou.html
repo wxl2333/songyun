@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="CN-ch">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="height=device-height, initial-scale=1.0">
+    <title>宋 · 运</title>
+    <style>
+        html,body{
+            overflow-y: hidden;
+            height: 100vh;
+        }
+        .container{
+            height: 100vh; 
+            margin: 0 ;
+        }
+        #mainDiv{
+
+            display: flex;
+            flex-direction:row;
+            position:relative;
+      	    left:0px;
+      	    top:0px;
+	        width: 2560px;
+      	    height: 100%;
+        }
+        #mainDiv div{
+            margin: 0 auto;
+            
+        }
+        #div1{
+            width: 640px;
+            height: 1030px;
+            background-image: url(./image/lang.jpg);
+            background-repeat: no-repeat;
+        }
+        #div2{
+            width: 640px;
+            height: 1030px;
+            background-image: url(./image/lang.jpg);
+            background-repeat: no-repeat;
+        }
+        #div3{
+            width: 640px;
+            height: 1030px;
+            background-image: url(./image/lang.jpg);
+            background-repeat: no-repeat;
+        }
+        #div4{
+            width: 640px;
+            height: 1030px;
+            background-image: url(./image/lang.jpg);
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width:640px){
+            .container{
+                width: 100%;
+            }
+            
+        }
+        @media screen and (min-width: 641px) {
+            .container{
+                width: 640px;
+            }
+        }
+        #btn {
+            width: 50px;
+            height: 200px;
+            background-color: rgb(191,155,93);
+            border-radius: 50px;
+            color: #fff;
+            transform: translate(170px,230px);
+            font-size: 24px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: "华文隶书";
+        }
+        a{
+          text-decoration: none;
+          color: #fff;
+        }
+    </style>
+</head>
+    <body>
+        <div class ="container">
+            <div id = "mainDiv">
+            <div id="div1"><div id="btn"><a href="yinru.html" >掇<p>石</p>墩</a></div></div>
+
+            <div id="div2"><div id="btn"><a href="yinru.html" >点击进入</a></div></div>
+            <div id="div3"><div id="btn"><a href="yinru.html" >点击进入</a></div></div>
+            <div id="div4"><div id="btn"><a href="yinru.html" >点击进入</a></div></div>
+            </div>
+        </div>
+    </body>
+</html>
